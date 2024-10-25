@@ -50,7 +50,7 @@ public class ForgotPassword extends HttpServlet{
 		            @Override
 		            protected PasswordAuthentication getPasswordAuthentication() {
 		                // Replace with your SMTP username and password
-		                return new PasswordAuthentication("logeshwaran23072003@gmail.com", "fsggxlwzolrmkisx");
+		                return new PasswordAuthentication("jeevithaganesan2003@gmail.com", "teqx mioc aaov alzk");
 		            }
 		        });
 		        
@@ -60,7 +60,7 @@ public class ForgotPassword extends HttpServlet{
 		        dao2.updateUserPassword(u);
 		      
 		        MimeMessage message = new MimeMessage(session);
-		        message.setFrom(new InternetAddress("logeshwaran23072003@gmail.com")); // Replace with your email
+		        message.setFrom(new InternetAddress("jeevithaganesan2003@gmail.com")); // Replace with your email
 		        message.setRecipient(Message.RecipientType.TO, new InternetAddress(email));
 		        message.setSubject("Your New Password");
 		        message.setText("Your new password is: " + newPass );
